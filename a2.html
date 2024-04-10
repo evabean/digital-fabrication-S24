@@ -9,10 +9,187 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Example Student's Assignment 2!</h1>
-    <div class="header">
-      <img src="red-panda.jpg" />
-      <p>Here is all the documentation for assignment 2!</p>
+    <h1>A2: Flower Power ft. Grasshopper</h1>
+    <div class="assignmentMainContainer">
+      <!-- Intro Image -->
+      <div class="imageBlock">
+        <img src="images/A2/1.17.jpeg" />
+        <p class="caption">The flower pile.</p>
+      </div>
+
+      <!-- Phase 1: Grasshopper Building -->
+      <div class="contentBlock">
+        <h2>Phase 1: Grasshopper Building</h2>
+        <p>I set out to build a basic flower shape with editable parameters that would allow me to scale the flower proportionally, adjust the petal dynamics independently, change the material thickness, and change the number/location of tabs if necessary. The images below go through the elements of the build, with the corresponding grasshopper parameters. </p>
+        
+        <div class="imageBlock">
+          <div class="imageContainer">
+            <img src="images/A2/1.1.png" />
+            <p class="caption">
+              The Flower Proportion value directly influences the radii of the petals, the position of the petals, the radius of the inner circle,  the length of the slots, and the position of the slots.
+            </p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <div class="imageContainer">
+            <img src="images/A2/1.2.png" />
+            <p class="caption">
+              Draw a petal. You can manipulate the length and width of the petal independently but they are both factors of the Flower Proportion value.
+            </p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <div class="imageContainer">
+            <img src="images/A2/1.3.png" />
+            <p class="caption">
+              Then, we move the petal to offset it from the radius. The movement along the y axis is a factor of the Flower Promotion value. 
+            </p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <div class="imageContainer">
+            <img src="images/A2/1.4.png" />
+            <p class="caption">
+              Array the petal using a polar array. At the risk of stating the obvious, the Petal Number value adjusts the number of petals. 
+            </p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <div class="imageContainer">
+            <img src="images/A2/1.5.png" />
+            <p class="caption">
+              We also draw the circle for the center of the flower, with a circumference determined by the Flower Proportion value.  
+            </p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <div class="imageContainer">
+            <img src="images/A2/1.6.png" />
+            <p class="caption">
+              We also draw a rectangle that will become the tab on the north/south poles of the flower. The tab length and width is determined by the petal length/width values, and we move it to the center of the y-axis by moving it according to it’s own width divided by negative two. 
+            </p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <div class="imageContainer">
+            <img src="images/A2/1.7.png" />
+            <p class="caption">
+              We also draw the object that will become the cutout slot. The slot depth and position is a factor of the Flower Proportion, and the slot width is the desired width based on the material you’re cutting.
+            </p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <div class="imageContainer">
+            <img src="images/A2/1.8.png" />
+            <p class="caption">
+              We extrude all the curves to our desired material thickness and cap them to create solids. If we baked at this point, this is what it would look like. 
+            </p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <div class="imageContainer">
+            <img src="images/A2/1.9.png" />
+            <p class="caption">
+              But we’re not done! We use “trim solid” to trim out the center of the flower and the slots. Then we bake! 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 2: Flower variation testing  -->
+      <div class="contentBlock">
+      <h2>Phase 2: Flower variation testing</h2>
+      <p>I planned to cut and test two variations of flowers with variations of petals and slots. Both variants (V1 and V2) had issues fitting together due to the orientation of the corrugation (again!) and the stability of the remaining petal material. I tried a variation with a wider petal (V3) and encountered the same issues.</p>
+      <p> I decided to just add a “tab” to two points on the flower in order to stabilize the slot (V4). It is not the prettiest solution, but it was relatively easy to add in grasshopper and it worked. </p>
+      
+      <div class="imageBlock">
+        <img src="images/A2/1.10.jpeg" />
+        <p class="caption">V1 and V2</p>
+      </div>
+
+      <div class="imageBlock twoUp">
+        <div class="imageContainer">
+          <img src="images/A2/1.11.jpeg" />
+          <p class="caption"> V1 fit, but bent at the contact points </p>
+        </div>
+        <div class="imageContainer">
+          <img src="images/A2/1.12.jpeg" />
+          <p class="caption"> V2 fit, but bent at the contact points </p>
+        </div>
+      </div>
+
+      <div class="imageBlock twoUp">
+        <div class="imageContainer">
+          <img src="images/A2/1.13.jpeg" />
+          <p class="caption">V3 with fewer tabs and wider petals</p>
+        </div>
+        <div class="imageContainer">
+          <img src="images/A2/1.14.jpeg" />
+          <p class="caption">V3 fit, but bent at the contact points</p>
+        </div>
+      </div>
+
+      <div class="imageBlock">
+        <img src="images/A2/1.15.jpeg" />
+        <p class="caption">V4 with tabs to stabilize the slots</p>
+      </div>
+
+      <div class="imageBlock">
+        <img src="images/A2/1.16.jpeg" />
+        <p class="caption">V4 fit with no bending at the contact point</p>
+      </div>
+
+      
+
+      </div>
+
+      <!-- Phase 3: Assembly & Learning Notes -->
+      <div class="contentBlock">
+        <h2>Phase 3: Assembly & Learning Notes</h2>
+        <p>I started assembling the parts randomly, but quickly realized this was unstable and I needed to align the N/S slots with the E/W petals of other flowers. I stuck to this pattern but added a few random daisies for flair at the end. </p>
+
+        <div class="imageBlock">
+          <div class="imageContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CLNqY0AHlWo?si=7U4b87FixpKjoPHj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="caption">Assembly! Charlie dog makes an appearance at 0:18 and is unhappy about it.</p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <img src="images/A2/1.17.jpeg" />
+          <p class="caption">Assembled daisy pile</p>
+        </div>
+      
+        <h3>Learning 1: Slots? </h3>
+        <p>Slots are so hard! I originally intended to slot slots in to other slots, but this proved too challenging and I focused on slot + surface joints. I think the fillet method and a wider slot opening coupled with a narrow end point would make this work better, but I didn’t have time to test in this round. I think this is also pronounced with cardboard which is so flexible. </p>
+
+        <h3>Learning 2: Cut order</h3>
+        <p>I noticed that when I exported a 2d vector from rhino to illustrator, the order of the layers always seemed to be random – maybe determined by the “order” they are baked in. It didn’t cause any problems but it was funny to watch the laser cutter jump around, and I imagine this could cause issues with some materials and more delicate cutting. </p>
+
+        <h3>Shoutouts</h3>
+        <p>Shoutout to Flo who helped me work through some grasshopper and printer issues! Thanks for being my double-checker and troubleshooter! </p>
+
+      </div>
+
+      <div class="contentBlock">
+        <h2>Appenxix and source files</h2>
+        <p><a href="files/A2/A2-KerfTest.ai">Kerf test for A2</a></p>
+        <p><a href="files/A2/Daisy Build.3dm">Rhino model for daisy build</a></p>
+        <p><a href="files/A2/daisy builder.gh">Grasshopper definition for daisy build</a></p>
+        <p><a href="files/A2/Daisy_V1V2.ai">Cut file for V1 and V2</a></p>
+        <p><a href="files/A2/Daisy_V3.ai">Cut file for V3</a></p>
+        <p><a href="files/A2/Daisy_V4.ai">Cut file for V4</a></p>
+      </div>
+
     </div>
+
   </body>
 </html>
