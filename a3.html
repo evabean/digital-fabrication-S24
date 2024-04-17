@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, maximum-scale=3.0" />
+        <title>A3: 3D Printing</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <h1>A3: 3D Printing!</h1>
+        <div class="assignmentMainContainer">
+            <!-- A1 Intro Image 3.0 -->
+            <div class="imageBlock">
+                <img src="images/A3/3.0.jpeg" />
+            </div>
+        
+             <!-- Printer Assembly -->
+             <div class="contentBlock">
+                <h2>Assembling the Ender3 S1 Pro</h2>
+                <p>I assembled the printer according to the steps in the booklet, without issues. It took about half an hour to put all the parts together. Right away, the bed was wiggly, so I adjusted the eccentric nuts until it was stable. Next, I manually leveled the bed using the knobs on each corner, but I couldn’t quite get it right – the knobs were almost always undone completely to get the bed high enough, or else I had to lower the nozzle to almost -4 which felt extreme. The paper test was always off one corner or another, but I went through the bed leveling protocol from Filament Friday anyway to check my progress. I ended up with a little bit of spaghetti. </p>
+
+                <div class="imageBlock">
+                    <!-- Image of print test A3/3.1 -->
+                    <img src="images/A3/3.1.jpeg" />
+                    <p class="caption">Making spaghetti with the bed leveling protocol</p>
+                </div>
+                <p>Frustrated, I went to discord, where I found some amazing resources from Rene! I followed the instructions in this video for tramming the bed, which involved pushing down on the front and back of the bed to tighten the springs. I also learned how to adjust the g-code to retain the new z-height I set, which saved me a lot of manual checking with every print. The result was almost instantly better – I was able to print the leveling squares again without any adhesion issues, and I moved on to printing my test pieces. </p>
+                
+                <div class="imageBlock twoUp">
+                    <!-- Image -->
+                    <div class="imageContainer">
+                        <img src="images/A3/3.1.1.jpeg" />
+                        <p class="caption">Assembled printer</p>
+                    </div>
+                    <!-- Image -->
+                    <div class="imageContainer">
+                        <img src="images/A3/3.1.2.jpeg"  />
+                        <p class="caption">Level test with paper</p>
+                    </div>
+                </div>
+
+                <div class="imageBlock twoUp">
+                    <!-- Image -->
+                    <div class="imageContainer">
+                        <img src="images/A3/3.1.3.jpeg"  />
+                        <p class="caption">Tightening the bed to the track to prevent wobble</p>
+                    </div>
+                    <!-- Image -->
+                    <div class="imageContainer">
+                        <img src="images/A3/3.1.4.png"  />
+                        <p class="caption">This adjustment to the gcode (from <a href="https://www.youtube.com/watch?v=GmhBYOEb-ro">this video</a>) uses the manual input bed mesh, not the default position – yay!</p>
+                    </div>
+                </div>
+
+            
+            </div>
+
+            <!-- Test Prints -->
+            <div class="contentBlock">
+                <h2>Test Prints</h2>
+                <p>My bed came out of the box with just the right amount of stick, so I didn’t have any issues with my test prints. Here are some things I noticed: </p>
+                <ul>
+                    <li>Not a ton of difference between the quality of cubes, but certainly the higher quality one is smoother with thinner layers </li>
+                    <li>Random z-seam made funny spiderwebs inside the tube – is this a sign of a settings issue? Or is spiderwebbing normal? </li>
+                    <li>Printing on the side takes so much longer than printing vertical</li>
+                    <li>The only adhesion issues were with the support bases, which was foreshadowing for my clip issues</li>
+                    <li>My sizing was most off in the depth (front-to-back) measurement on cubes, which is likely due to horizontal expansion. I’m sure this will be good to remember when I make my box in A4.</li>
+                </ul>
+            
+                <div class="imageBlock">
+                    <!-- Cube 1 A3/3.2 -->
+                    <img src="images/A3/3.2.jpeg"/>
+                    <p class="caption">Cube 1: Low quality</p>
+                </div>
+
+                <div class="imageBlock">
+                    <!-- Cube 2 A3/3.3 -->
+                    <img src="images/A3/3.3.jpeg" />
+                    <p class="caption">Cube 2: Standard quality</p>
+                </div>
+                
+                <div class="imageBlock">
+                    <!-- Cube 3 A3/3.4 -->
+                    <img src="images/A3/3.4.jpeg" />
+                    <p class="caption">Cube 3: Excellent quality</p>
+                </div>
+
+                <div class="imageBlock">
+                    <!-- Cube 4 A3/3.5 -->
+                    <img src="images/A3/3.5.jpeg" />
+                    <p class="caption">Cube 4: Concentric top and bottom</p>
+                </div>
+
+                <div class="imageBlock">
+                    <!-- Tube 1 A3/3.6 -->
+                    <img src="images/A3/3.6.jpeg" />
+                    <p class="caption">Tube 1: Single wall </p>
+                </div>
+
+                <div class="imageBlock twoUp">
+                    <!-- Clips A3/3.12 -->
+                    <div class="imageContainer">
+                        <img src="images/A3/3.7.jpeg" />
+                        <p class="caption">Tube 2: Double wall, random z-seam alignment </p>
+                    </div>
+                    <!-- Clips A3/3.13 -->
+                    <div class="imageContainer">
+                        <img src="images/A3/3.8.jpeg"/>
+                        <p class="caption">Interior of random z-seam alignment tube</p>
+                    </div>
+                </div>
+
+
+                <div class="imageBlock">
+                    <!-- Cylinder 1 A3/3.9 -->
+                    <img src="images/A3/3.9.jpeg" />
+                    <p class="caption">Cylinder 1: Spiraled</p>
+                </div>
+
+                <div class="imageBlock">
+                    <!-- Cylinder 2 A3/3.10 -->
+                    <img src="images/A3/3.10.jpeg" />
+                    <p class="caption">Cylinder 2: Sideways print with supports</p>
+                </div>
+
+                <div class="imageBlock">
+                    <!-- Measurement Chart A3/3.11 -->
+                    <img src="images/A3/3.11.png" />
+                    <p class="caption">Expected vs. actual dimensions and print times</p>
+                </div>
+
+            </div>
+
+            <!-- Clips -->
+            <div class="contentBlock">
+                <h2>Printing Clips</h2>
+                <p>At any point, I could have chosen to stop suffering and design some clips that didn’t require support but, dear reader, I chose to suffer instead. I was practicing merging shapes in rhino and liked the shape of the two clips I came up with, so I went with them. I made their opening 3.52mm for 3.55mm cardboard, and the first clip fit the cardboard well so I suppose it was an educated guess. I printed my first two clips without issues, so I made a big file with all the clips I would need and set it to print. </p>
+
+                <div class="imageBlock twoUp">
+                      <!-- Clips A3/3.12 -->
+                    <div class="imageContainer">
+                      <img src="images/A3/3.12.jpeg" />
+                      <p class="caption">Flat clip test</p>
+                    </div>
+                    <!-- Clips A3/3.13 -->
+                    <div class="imageContainer">
+                      <img src="images/A3/3.13.jpeg"/>
+                      <p class="caption">Sideways clip test</p>
+                    </div>
+                </div>
+
+                <div class="imageBlock">
+                    <!-- Rhino shot of clip collection A3/3.14 -->
+                    <img src="images/A3/3.14.png" />
+                    <!-- <p class="caption">Cylinder 2: Sideways print with supports</p> -->
+                </div>
+
+                <p>At this point, I think the bed of my printer had built up too much glue or had simply acquired too much plastic residue to retain its original stickiness. I started the print maybe 15 times, only to have one or two of the first layers peel up or the nozzle clog. I tried adding more glue, or even using hairspray (thanks, Reddit), but I kept having the same issues. Eventually, I retracted the filament, heated and ejected what was left in the nozzel, washed the bed with Dawn soap, left it to dry overnight, and came back in the morning.</p>
+
+                <div class="imageBlock twoUp">
+                    <!-- Clip Pile A3/3.15 -->
+                    <div class="imageContainer">
+                        <img src="images/A3/3.15.jpeg" />
+                        <p class="caption">All the rejected first layers</p>
+                    </div>
+                    <!-- Specific clip graveyard A3/3.16 -->
+                    <div class="imageContainer">
+                        <img src="images/A3/3.16.jpeg"/>
+                        <p class="caption">Specific ways the first layer failed</p>
+                    </div>
+                </div>
+
+                <p>My morning test prints were still a bit wonky, so I checked my bed leveling and surprise – it was off again! With a bit of manual adjustment, I was able to print a batch of each type of clip with a few minor issues (wonky bottom layer on one clip) but nothing fatal. I also slowed the print speed for the initial layer to 60% on the contorl panel, which helped a lot with adhesion.</p>
+
+                <div class="imageBlock">
+                    <!-- Bunch of clips printing A3/3.17-->
+                    <img src="images/A3/3.17.jpeg" />
+                    <p class="caption">I realized at this point my bed has an alarming glue patina, so I went to the store and got some rubbing alcohol and will have better plate hygiene for the next assignment. </p>
+                </div>
+
+            </div>
+
+            <!-- Assembly and shake test -->
+            <div class="contentBlock">
+                <h2>Assembly and Shake Test</h2>
+                <p>Up to this point, I hadn't really considered what shape I would make once I had my clips, but I quickly realized that wasn't the point. My goal was to learn about printing clips in batches, and to pass a shake test, even if it was a shake test on an ugly polynothing shape.</p>
+
+                <div class="imageBlock">
+                    <!-- GIF of shake test A3/3.18 -->
+                    <img src="images/A3/3.18.jpeg" />
+                </div>
+
+                <div class="imageBlock twoUp">
+                    <div class="imageContainer">
+                        <!-- Image of flat clips A3/3.19 -->
+                        <img src="images/A3/3.19.gif" />
+                    </div>
+
+                    <div class="imageContainer">
+                        <!-- GIF of shake test A3/3.20 -->
+                        <img src="images/A3/3.20.gif" />
+                    </div>
+                </div>
+
+                <div class="imageBlock twoUp">
+                    <!-- Clip Pile A3/3.21 -->
+                    <div class="imageContainer">
+                        <img src="images/A3/3.21.jpeg" />
+                    </div>
+                    <!-- Clip Pile A3/3.22 -->
+                    <div class="imageContainer">
+                        <img src="images/A3/3.22.jpeg"/>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contentBlock">
+                <h2>Helpful Links</h2>
+
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=GmhBYOEb-ro">Ender 3 S1 Pro 'Automatic' Bed Leveling In 3 Simple Steps</a></li>
+                </ul>
+
+                <h2>Source Files</h2>
+                <ul>
+                    <li><a href="files/A3/A3-Assets.zip">Source Files ZIP</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </body>    
+
+</html>
