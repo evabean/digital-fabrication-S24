@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>A4: Press fit box</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    
+  </head>
+
+  
+  <body>
+    <h1>A4: Press fit box</h1>
+    
+    <div class="assignmentMainContainer">
+
+      <!-- Intro Image -->
+      <div class="imageBlock">
+        <img src="images/A4/4-0.jpeg" />
+      </div>
+
+      <!-- Section -->
+      <div class="contentBlock">
+        <h2>Tolerance Testing</h2>
+        <p>I thought the hardest part of making a press-fit box would be tolerance, so I started by printing a push-fit tolerance board from <a href="https://www.thingiverse.com/thing:4644465">here</a>. I printed with the default standard quality settings on Cura. The pieces fit at .075mm, but I figured there would be some level of tolerance stacking and because they were pressing in a cube arrangement, 0.1mm would be an acceptable place to start. To avoid printing a bunch of things that didn’t fit together, I printed two “2-slot” pieces that could be fit together flat or at a corner. </p>
+        
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A4/4-1.jpeg" />
+            <p class="caption">Push-fit tolerance board</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A4/4-2-1.jpeg" />
+            <p class="caption">Initial 2-slot pieces demonstrating a flat fit</p>
+          </div>
+        </div>
+
+
+        <div class="imageContainer">
+          <img src="images/A4/4-2-2.jpeg" />
+          <p class="caption">Initial 2-slot pieces demonstrating a corner fit</p>
+        </div>
+      </div>
+
+      <div class="contentBlock">
+        <h3>Test V1 – .1mm, standard settings in Cura </h3>
+        <p>This test was a tight fit, but it fit. They could be clicked together with a satisfying snap, but it was clear that there was some horizontal expansion. On a flat fit, the “bottom” sides needed a lot of wiggling to slot together while the “top” sides worked perfectly. On a corner fit with the “bottom” facing in, I could barely get the pieces together, but its the “bottom” facing out, it was an easy fit. On a corner fit, I did notice some gaps on the interior joint where the inside corners of the slots naturally rounded so couldn’t accommodate the the entire “prong”. A dog-bone type cut could solve this problem, but I had different ideas. </p>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img src="images/A4/4-3.jpeg" />
+              <p class="caption">Corner fit with "bottom" side facing out/p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A4/4-4.jpeg" />
+            <p class="caption">Flat fit with the tight "bottom" side connections circled</p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <img src="images/A4/4-5.jpeg" />
+          <p class="caption">Interior joint gaps</p>
+        </div>
+
+      </div>
+
+      <div class="contentBlock">
+        <h3>Test V2 –.1mm, standard settings in Cura with shorter “slot”</h3>
+        <p>For this test, I ran the same settings but removed .1mm from the end of the “slot” to see if I could get the prong to hit the end of the join. I don’t know why I thought this would work – I just had to do it to realize it wouldn’t. It didn’t, and the gap was worse. </p>
+
+        <div class="imageBlock">
+          <img src="images/A4/4-6.jpeg" />
+          <p class="caption">Even worse joint gaps</p>
+        </div>
+
+      </div>
+
+      <div class="contentBlock">
+        <h3>Sidebar – Expansion cubes</h3>
+        <p>I pivoted to instead address the horizontal expansion issue, hoping that would solve for a better fit. I printed two cubes – one with default standard settings, and one with -.15mm horizontal expansion compensation on the first 4 layers, plus I reduced the print speed to 50% for the first 4 layers (shell). You can see the clear difference between the two cubes in the image below – horizontal expansion compensation worked to cure the dreaded elephant foot effect! </p>
+        <div class="imageBlock">
+          <img src="images/A4/4-7.jpeg" />
+          <p class="caption">Flawed cube on the left, less flawed cube on the right</p>
+        </div>
+      </div>
+
+      <div class="contentBlock">
+        <h3>Test V3 – .1mm vs .15mm tolerance, with horizontal expansion</h3>
+        <p>Maybe the slot needs to be bigger? Based on my press fit tolerance test kit, I tested .15mm tolerance with the horizontal expansion set to -.15mm for the bottom layers. The bigger tolerance value was the clear winner, and fit much better but still had some tiny issues with the “bottom” sides fitting together. I printed the bottom and sides of a cube and the “gap” issue was almost completely fixed so I knew I was on to something. </p>
+        <div class="imageBlock">
+          <img src="images/A4/4-8.jpeg" />
+          <p class="caption">Almost successful, but the bottoms were still tight.</p>
+        </div>
+      </div>
+
+      <div class="contentBlock">
+        <h3>Test V4 – .15mm tolerance, -.15mm horizontal expansion adjustment, .4mm initial layer height</h3>
+        <p>For this test, I returned to my V3 settings but changed the initial layer height to .4mm match the nozzle width, based on some things I read on the internet <a href="https://all3dp.com/2/elephant-s-foot-3d-printing-problem-easy-fixes/">here</a> and <a href="https://www.wevolver.com/article/3d-printing-elephant-foot#">here</a>. The pieces had a satisfying snap-fit, very minimal gaps, and could be fit in any configuration of top/bottm match. Perfect!</p>
+
+        
+        <div class="imageBlock">
+          <img src="images/A4/4-9-0.jpeg"/>
+          <p class="caption">Super duper fit!</p>
+        </div>
+      </div>
+
+      <div class="contentBlock">
+        <h2>Box Printing </h2>
+        <p>It did take me a while to design the actual boxes in Rhino (see image below), but once they were designed, I had an uneventful box printing save for a bit of warping on the bottom panel which I ended up re-printing. The box was printed with .15mm tolerance, -.15mm horizontal expansion for the bottom shell, 4 slow initial layers, and .4mm initial layer height. I used hairspray for extra adhesion. The box press-fits nicely together and holds sugar without leaking. </p>
+
+        <div class="imageBlock">
+          <img src="images/A4/4-9-1.png"/>
+          <p class="caption">I had a really hard time visualizing how things fit together so I made alot of models</p>
+        </div>
+        
+        <div class="imageBlock">
+          <img src="images/A4/4-10.jpeg"/>
+          <p class="caption">Warpy bottom</p>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img src="images/A4/4-11.jpeg"/>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A4/4-12.jpeg"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="contentBlock">
+        <h2>Other thoughts</h2>
+        <ul>
+          <li>I may have been able to get away with a smaller tolerance but higher horizontal expansion compensation – something to consider in the future</li>
+          <li>Always print tiny bits and figure if they fit together before you print the big part! This is true for laser cutting, 3d printing… it’s probably true for everything and makes iteration so much less frustrating. </li>
+        </ul>
+      </div>
+
+      <div class="contentBlock">
+        <h2>Assets</h2>
+        <ul>
+          <li><a href="files/A4/Box.3dm">Rhino file with my box iterations </a></li>
+          <li><a href="files/A4/Push Fit Test.zip">Push fit test assets</a></li>
+          <li><a href="files/A4/Box.zip">Box print assets</a></li>
+          <li><a href="files/A4/Box Print Cura Settings.curaprofile">Final Cura print profile for box</a></li>
+        </ul>
+      </div>
+
+    
+    </div>
+  </body>
+</html>
