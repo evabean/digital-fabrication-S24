@@ -20,7 +20,7 @@ svg {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inconsolata", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   max-width: 1000px;
@@ -104,6 +104,11 @@ p {
 
 .imageBlock img{
   vertical-align: top;
+}
+
+.imageBlock .square{
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 .caption{
