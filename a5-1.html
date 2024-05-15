@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>A5-1: Meshy and lamp planning!</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <h1>A5-1: Meshy and lamp planning!</h1>
+    
+    <div class="assignmentMainContainer">
+
+      <!-- Intro Image -->
+      <div class="imageBlock">
+        <img src="images/A5-1/5-1-0.jpeg" />
+      </div>
+
+      <!-- Section -->
+      <div class="contentBlock">
+        <h2>Hello Kitty and the Bad Mesh</h2>
+        <p>I unfortunately missed class last week, and to make sure I made it thorugh this assignment, I picked something that I hoped would have a slightly less complex mesh than the examples I saw in the discord chat. My Hello Kitty obsessed co-worker just moved and has a new desk setup, so I thought I'd make her a little trinket box with her favorite character on top as "handle."</p>
+
+        <div class="imageBlock">
+          <img src="images/A5-1/5-1-1.png" />
+          <p class="caption">Preparing the Hello Kitty box file</p>
+        </div>
+
+        <div class="imageBlock">
+          <img src="images/A5-1/5-1-2.png" />
+          <p class="caption">Preparing the Hello Kitty box file</p>
+        </div>
+
+        <p> But making a good mesh is hard. I staretd by just algining Hello Kitty's bum with the top of the box, but when I ran RepairMesh, the result was bad.</p>
+
+        <div class="imageBlock">
+          <img src="images/A5-1/5-1-3.png" />
+          <p class="caption">Not a good mesh</p>
+        </div>
+
+        <p>I thought it might help to bring Hello Kitty deeper into the box lid, to create a connection with less overhang. The results were better, but not fantastic aka still Bad Mesh.</p>
+
+        <div class="imageBlock">
+          <img src="images/A5-1/5-1-4.png" />
+          <p class="caption">STILL not a good mesh</p>
+        </div>
+
+        <p>To me, 2 pairs of intersecting faces seemed like it could work. Again, I was not in class, so how could I know? I decided to experiment by also slicing and printing a reliable shape (orb) and see if the results were diffeent between the two. </p>
+
+        <div class="imageBlock">
+          <img src="images/A5-1/5-1-5.png" />
+          <p class="caption">Orb with the good mesh</p>
+        </div>
+
+        <div class="imageBlock">
+          <img src="images/A5-1/5-1-6.png" />
+          <p class="caption">Lining up my little trinkets in Cura</p>
+        </div>
+
+        <p>Unfortunately for Prof Nadya, I received some cute filament in the mail this week so I decided to print in purple. I had no issues swithcing filament.!</p>
+
+        <div class="imageBlock">
+          <img src="images/A5-1/5-1-7.jpeg" />
+          <p class="caption">Cute filament!</p>
+        </div>
+
+        <p>The first version was a little warped but had no issues slicing or printing related to mesh boolean operations. Satisfied, I  switched from my metal bed to a glass bed and experienced EXTREME ADHESION. I also turend the settings from "low quality" to "standard."</p>
+
+        <div class="imageBlock">
+          <img src="images/A5-1/5-1-8.jpeg" />
+          <p class="caption">First verison, with supports</p>
+        </div>
+
+        <div class="imageBlock">
+          <img src="images/A5-1/5-1-9.jpeg" />
+          <p class="caption">First verison, with supports. Bed adhesion issues caused warping on the boxes but no issues with the merged parts of the mesh.</p>
+        </div>
+
+        <div class="imageBlock">
+          <img src="images/A5-1/5-1-10.jpeg" />
+          <p class="caption">First version on the right, second version on the left. For the second version, I used a glass bed and switched from "low quality" to "standard quality" in Cura.</p>
+        </div>
+
+        <div class="contentBlock">
+          <h3>Assets</h3>
+          <ul>
+            <li><a href="https://www.thingiverse.com/thing:371746">Hello Kitty .stl</a></li>
+            <li><a href="https://www.thingiverse.com/thing:12686">Box .stl</a></li>
+            <li><a href="files/A5-1/MeshyMerge.3dm">Mesh Merge Rhino File</a></li>
+            <li><a href="files/A5-1/MeshyMerge.gcode">Mesh Merge Gcode</a></li>
+            <li><a href="files/A5-1/MeshyMerge.stl">Mesh Merge .stl</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contentBlock">
+        <h2>Lamp planning</h2>
+        <h3>Inspiration</h3>
+        <p> Next up, lamp planning! I'm obessesed with lamps and lighting, so the issue is not coming up with ideas, it's narrowing it down. I started by looking for inspiratin in form and texture – here are a few bits of inspiration.</p>
+
+        
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-11.jpeg" class="square" />
+              <p class="caption">Superpose Table Lamp. Source: <a href="http://www.frederikkurzweg.com/#/superpose-table-light/">FREDERIK KURZWEG DESIGN STUDIO</a></p>
+          </div>
+          <!-- Image -->
+          
+
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-13.jpg" class="square"/>
+            <p class="caption">ORBEE table lamp Source: <a href="https://www.etsy.com/listing/1417555091/orbee-unique-lamp-modern-lamp-eco-lamp/">Etsy</a></p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-12.jpeg" class="square"/>
+            <p class="caption">Mai Table Lamp M Black. Source: <a href="https://www.zuiver.com/en/mai-tafellamp-m-zwart">Zuiver</a></p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-14.jpeg" class="square"/>
+            <p class="caption">Filter Table Lamp. Source: <a href="https://www.bludot.com/filter-table-lamp.html?color=marine-blue">Blu Dot</a></p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-15.jpg" class="square"/>
+            <p class="caption">Matrix light. Source: <a href="https://design-milk.com/matrix-a-light-and-bench-built-from-a-grid-structure-by-os-oos/?epik=dj0yJnU9djJEay04ZUNlUmtkTC1BOEhqU1B4TWxacWNuQnhDSGYmcD0wJm49cXdyc3pqQWdsbDhEMFhwNGh6bjQ3QSZ0PUFBQUFBR1l5WnJZ">Design Milk</a></p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-16.jpg" class="square"/>
+            <p class="caption">Poppy Wall Lamp. Source: <a href="http://www.frederikkurzweg.com/#/peekaboo-1/">FREDERIK KURZWEG DESIGN STUDIO</a></p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-17.jpg" class="square"/>
+            <p class="caption">Ware lamp. Source: <a href="http://msds-studio.ca/projects/ware-lamp">MSDS Studio</a></p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-18.jpg" class="square"/>
+            <p class="caption">Lampe lamp. Source: <a href="https://www.thingiverse.com/thing:1646315">Flowalistik on ThingiverseO</a></p>
+          </div>
+        </div>
+
+        <h3>Sketching</h3>
+        <p> I started sketching up some ideas, and that's as far as I got. My next step is to start experimenting with printing mesh-ish objects and seeing how flexible they are, how high quality I can get them to print, etc.</p> 
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-19.jpg" class="square"/>
+            <p class="caption">...</a></p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-20.jpg" class="square"/>
+            <p class="caption">...</a></p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-21.jpg" class="square"/>
+            <p class="caption">...</a></p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-22.jpg" class="square"/>
+            <p class="caption">...</a></p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-22.jpg" class="square"/>
+            <p class="caption">...</a></p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-23.jpg" class="square"/>
+            <p class="caption">...</a></p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-24.jpg" class="square"/>
+            <p class="caption">...</a></p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-25.jpg" class="square"/>
+            <p class="caption">...</a></p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-26.jpg" class="square"/>
+            <p class="caption">...</a></p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-1/5-1-27.jpg" class="square"/>
+            <p class="caption">...</a></p>
+          </div>
+        </div>
+
+
+      </div>
+    
+
+
+    </div>
+  </body>
+</html>

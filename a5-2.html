@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>A5-2: Lamp!</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <h1>A5-2: Lamp</h1>
+    <div class="assignmentMainContainer">
+
+      <!-- Intro Image -->
+      <div class="imageBlock">
+        <img src="images/A5-2/5-2-35.jpeg"/>
+        <p class="caption">...</p>
+      </div>
+
+
+      <!-- Section -->
+      <div class="contentBlock">
+        <h4>The TLDR of this project is: Don’t print circles! I tried so hard to make a mesh screen for my lamp with circular holes, and eventually I decided I either had to smash my 3d printer to pieces of choose a different direction (I chose a different direction because I want to go to grad school!) </h4>
+      </div>
+
+      <div class="contentBlock">
+        <h1>Designing An In/Organic Lamp That Might Work</h1>
+        <p>When gathering ideas, I was mostly drawn to lamps that had mesh screens to let light through. My bed wasn’t big enough to do the “foldover” method I originally wanted to do, so I designed a version with two smaller screens sandwiching the bulb.</p>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img class="square" src="images/A5-2/5-2-1.jpg" />
+              <p class="caption">Concept drawing</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-2.jpg" />
+            <p class="caption">Concept drawing</p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img class="square" src="images/A5-2/5-2-3.png" />
+              <p class="caption">Concept drawing</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-4.png" />
+            <p class="caption">Concept drawing</p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <img src="images/A5-2/5-2-5.png" />
+          <p class="caption">Concept drawings</p>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img class="square" src="images/A5-2/5-2-6.jpeg" />
+              <p class="caption">Superpose Table Lamp. Source: <a href="http://www.frederikkurzweg.com/#/superpose-table-light/">FREDERIK KURZWEG DESIGN STUDIO</a></p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-7.jpeg" />
+            <p class="caption">Filter Table Lamp. Source: <a href="https://www.bludot.com/filter-table-lamp.html?color=marine-blue">Blu Dot</a></p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img class="square" src="images/A5-2/5-2-8.jpg" />
+              <p class="caption">Poppy Wall Lamp. Source: <a href="http://www.frederikkurzweg.com/#/peekaboo-1/">FREDERIK KURZWEG DESIGN STUDIO</a></p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-9.jpg" />
+            <p class="caption">Ware lamp. Source: <a href="http://msds-studio.ca/projects/ware-lamp">MSDS Studio</a></p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img class="square" src="images/A5-2/5-2-9-1.png" />
+              <p class="caption">Early mesh renderings</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-9-2.png" />
+            <p class="caption">Early mesh renderings</p>
+          </div>
+        </div>
+
+        <p> I started with a round base and a square mesh dot screen, but when I designed my attachment points (press-fit buttons on the front and back face), I realized that I would either have to wrap the mesh around the lamp (see image below) and calculate the button alignment, or have only one attachment point which seemed sketchy. I printed a few test cubes to figure out the button fit tolerance, and then there was an interlude where I printed half a round base, realized this was going to be a problem, then smashed it to bits trying to get it off the glass plate.</p>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img class="square" src="images/A5-2/5-2-10.jpeg" />
+              <p class="caption">Casualty of glass bed</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-11.jpeg" />
+            <p class="caption">Tolerance testing cubes</p>
+          </div>
+        </div> 
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img src="images/A5-2/5-2-11-1.jpeg" class="square" />
+              <p class="caption">What happens if you put plastic in the oven?</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-2/5-2-11-2.jpeg" class="square" />
+            <p class="caption">It's bendable!</p>
+          </div>
+        </div>
+
+
+        <p>I switched to a square base, which made attachment points easier, but I wasn’t happy with a square mesh and square base so I designed a kind of blob-type mesh screen while the new square base printed. Unfortunately my nozzle clogged printing the new base while I was out for a run, so I had to re-print. Luckily, the attachment points printed just fine before the filament stopped coming through, so I printed a quick test attachment to double-check my tolerance on the rejected base and they worked, so I felt happy and confident moving forward. </p>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img src="images/A5-2/5-2-12.jpeg" />
+              <p class="caption">Double-checking the fit</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A5-2/5-2-13.jpeg" />
+            <p class="caption">The nubs broke off when I removed it :(</p>
+          </div>
+        </div> 
+
+        <div class="imageBlock">
+          <img class="square" src="images/A5-2/5-2-14.jpeg" />
+          <p class="caption">Cleaned the blockage!</p>
+        </div>
+
+        <div class="imageBlock">
+          <img src="images/A5-2/5-2-15.jpeg" />
+          <p class="caption">Left vs Right – clearly needed leveling, something was wrong!</p>
+        </div>
+      </div>
+
+      <div class="contentBlock">
+        <h1>Circle Hell</h1>
+        <p>All my problems started with circles. When I printed my first test mesh, I had lots of issues getting the circles to stick but when cleaned the bed with Dawn soap and acetone, slowed down to 40%, and increased nozzle temperature to 212, I made it work. But when I went to print the larger screen, I could not get the circles to work. I restarted the print almost 30 times because one little circle would fly off, or bunch up. I tried the glass bed, the metal bed, the metal bed with hairspray, and nothing worked. Things were also sticking too much to the glass bed. I tried re-leveling the bed several times. At one point I got about 15% in to printing and then, for reasons unknown to me, the front right corner appears to have become misaligned and the nozzle started dragging through previous print material. I set myself a deadline for 5pm and said I would design something else if I didn’t make it work and reader, I did not make it work.</p>
+        
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img class="square" src="images/A5-2/5-2-16.jpeg" />
+              <p class="caption">Spot the bad circles</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-17.gif" />
+            <p class="caption">Cathartic scraping</p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img class="square" src="images/A5-2/5-2-18.jpeg" />
+              <p class="caption">Carnage</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-19.jpeg" />
+            <p class="caption">SOS</p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img class="square" src="images/A5-2/5-2-20.jpeg" />
+              <p class="caption">This was going ok...</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-21.jpeg" />
+            <p class="caption">until it wasn't</p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img class="square" src="images/A5-2/5-2-23.jpeg" />
+              <p class="caption">One corner knob came loose overnight so the nozzle scraped the print...</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-22.jpeg" />
+            <p class="caption">... also it won't come off the glass. RIP.</p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <img class="square" src="images/A5-2/5-2-25-0.png" />
+          <p class="caption">All this grasshopper spaghetti for nothing</p>
+        </div>
+
+        <p>Important to note: at this point in the process, when I was losing my mind, a random dog showed up in my yard. Luckily my dog was inside and did not fight her. I walked around the neighborhood and eventually found her owner by happenstance, but not before she drank a bowl of toilet water and smashed the lightbulb I was using for this project. I am just grateful she didn’t mess up my print. </p>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img class="square" src="images/A5-2/5-2-24-0.jpeg" />
+              <p class="caption">Actual photo of my dog</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-24-1.jpeg" />
+            <p class="caption">This is not my dog</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class ="contentBlock">
+        <h1>Pivoting to a more Linear Hell </h1>
+        <p> don’t like this lamp concept as much, but I switched to a line mesh pattern because I knew it would be easier to print. At this point, it’s Monday afternoon so I cannot dilly dally and I must do what I know will go smoothly. And it did! Luckily my rhino skills are getting stronger so it was easy for me to put together a linear screen. I had a few misprints but overall it went much better than the circle concept. I will never draw a circle again, I am a line girl forever. </p>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-25.png" />
+            <p class="caption">Linear screen designs</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-26.jpeg" />
+            <p class="caption">Printing is going... ok.</p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-31.jpeg" />
+            <p class="caption">Overnight oops (loose corner knob, again). </p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-32.jpeg" />
+            <p class="caption">Modern Art</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contentBlock">
+
+        <h1>Final Output: This is technically a lamp</h1>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-27.jpeg" />
+            <p class="caption">Back, with attachment points and cord hole</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-28.jpeg" />
+            <p class="caption">Front, with attachment points</p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+            <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-29.jpeg" />
+            <p class="caption">This is technically a lamp</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-30.jpeg" />
+            <p class="caption">This is technically the back of a lamp</p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-33.jpeg" />
+            <p class="caption">Not a perfect print but the best we could do.</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-34.jpeg" />
+            <p class="caption">This side faces the bulb, with attachment points.</p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-35.jpeg" />
+            <p class="caption">This isn't exactly what I imagined but it's what we have.</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img class="square" src="images/A5-2/5-2-36.jpeg" />
+            <p class="caption">A lamp!</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contentBlock">
+        <h1>Lessons Learned</h1>
+        <ul>
+          <li>Your printer has to be VERY well calibrated to make hundreds of tiny circles! I had neither the time nor patience to calibrate it. </li>
+          <li>The glass bed is too adhesive, or at very least, I need to experiment with placing the nozzle further from the bed than I would with the metal one. Only one glass bed was sacrificed this week and hopefully that protects me from further curses. </li>
+        </ul>
+      </div>
+
+      <div class="contentBlock">
+        <h1>Resources & Files</h1>
+        <ul>
+          <li><a href="files/A5-2/Lamp_1.3dm">Original Lamp Rhino File</a></li>
+          <li><a href="files/A5-2/Lamp_Stripe.3dm">Striped Screen Rhino File</a></li>
+          <li><a href="files/A5-2/Lamp Base.zip">Lamp Base Files</a></li>
+          <li><a href="files/A5-2/Mesh.zip">Lamp Screen Files</a></li>
+          <li><a href="files/A5-2/Tests.zip">Test Object Files</a></li>
+        </ul>  
+      </div>
+
+      <!--  Start Mold content -->
+      <div class="contentBlock">
+        <h1>What about molds?</h1>
+
+        <p>I know you're going to be disappointed, Prof Nadya, but I have not started casting yet. I have designed a mold, and at the time of writing this I am attempting to print the first half (with a raft to avoid any adhesion isssues!). I didn't do a ton of planning or ideating – I picked a simple shape clean edges to make this as easy as possible for myself, and I made a practical item because I'm a practical person and I couldn't stand to all this work and not have an object to admire from it.</p>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A7/6-1.png" />
+            <p class="caption">How I assembled my very simple little object</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A7/6-2.png" />
+            <p class="caption">Following the instructions from <a href="https://www.instructables.com/3D-Printing-for-Two-Part-Silicone-Molds/">Instructables</a>, it looks like a nice dill pickle chip.</p>
+          </div>
+        </div>
+
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A7/6-3.png" />
+            <p class="caption">It doesn't work to put the spout here, both because it puts the spout at the highest point (where the sprue should be).</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A7/6-4.png" />
+            <p class="caption">Not good, not good.</p>
+          </div>
+        </div>
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A7/6-5.png" />
+            <p class="caption">Better! Offset the spout so it has more room and...</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A7/6-6.png" />
+            <p class="caption">the sprue will be at the highest point on the mold so air can escape.</p>
+          </div>
+        </div>
+
+          <!-- Image -->
+        <div class="imageContainer">
+          <img src="images/A7/6-7.png" />
+          <p class="caption">Again, folllowing the instructions from <a href="https://www.instructables.com/3D-Printing-for-Two-Part-Silicone-Molds/">Instructables</a>, we have models for two parts of a mold! Yay! </p>
+        </div>
+
+        <div class="imageContainer">
+          <img src="images/A7/6-8.jpeg" />
+          <p class="caption">First half printed. It just occurred to me, looking at this image, that the registration marks didn't account for tolerance (it wasn't in the instructions)... so we'll see how this works.</p>
+        </div>
+
+        <div class="contentBlock">
+          <h1>Resources & Files</h1>
+          <ul>
+            <li><a href="files/A7/Mold 1.zip">Mold 1 STL and Gcode</a></li>
+            <li><a href="files/A7/Mold 2.zip">Mold 2 STL and Gcode</a></li>
+            <li><a href="files/A7/Mold.3dm">Mold Rhino File</a></li>
+          </ul>  
+        </div>
+
+
+
+
+
+
+      </div>
+    
+    </div>
+  </body>
+</html>
