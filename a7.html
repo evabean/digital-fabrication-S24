@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>Final Project Proposal</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <h1>A7: Project Proposal</h1>
+    
+    <div class="assignmentMainContainer">
+      <div class="contentBlock">
+        <h2>Project Description</h2>
+        <p>When I travel, I often want to bring one, two, or even three types of loose-leaf tea and filter bags to brew a good cup of tea. I don’t currently have a good set up, so I end up carrying around bags of loose-leaf tea and ziplocks with filters in them. For my final project, I designed a set of small, modular 3D-printed tea storage caddies that snap together and snap to a small box to store filters.</p>
+
+        <h3>Methods</h3>
+        <ul>
+          <li>Rhino</li>
+          <li>Grasshopper</li>
+          <li>3d printing</li>
+          <li>Stock parts</li>
+        </ul>
+        
+
+        <div class="imageBlock twoUp">
+          <!-- Image -->
+          <div class="imageContainer">
+              <img src="images/A7/Overview-1.png" />
+              <p class="caption">Sketch of overall box plan</p>
+          </div>
+          <!-- Image -->
+          <div class="imageContainer">
+            <img src="images/A7/Overview-2.png" />
+            <p class="caption">How they fit/snap together</p>
+          </div>
+        </div>
+
+        <div class="imageBlock">
+          <img src="images/A7/Tea.jpeg" />
+          <p>What I want to take with me, not in a ziplock bag</p>
+        </div>
+
+
+      </div>
+
+      <div class="contentBlock">
+        <h2>Design</h2>
+        <p>Below are some preliminary sketches. I identified the parts of the system where I needed to make design decisions, and worked out pros and cons through sketching – for example, deciding to make sliding lids instead of hinged lids to reduce complexity.</p>
+
+
+        <h3>Drawer Shape</h3>
+        <div class="imageBlock">
+          <img src="images/A7/DrawerShape.png" />
+          <p>For the drawer, I decided I'd rather have the openings on the "top" instead of sliding drawers, so I can worry less about latching mechanisms and drawers "sliding out"</p>
+        </div>
+
+
+        <h3>Lid Mechanism</h3>
+        <div class="imageBlock">
+          <img src="images/A7/LidMechanism.png" />
+          <p>Designing hinges seemed like a project in itself, so I decided to not overcomplicate and use a slide-in "lid" mechanism</p>
+        </div>
+
+
+        <h3>Connectability and Modularity</h3>
+        <div class="imageBlock">
+          <img src="images/A7/Connectability.png" />
+          <p>I thought about various press-fit options for attaching the tea boxes together, but I want to first try embedding magnets in the print to be able to connect modules without parts that can wear and tear.</p>
+        </div>
+
+        <h3>Lid slide style</h3>
+        <div class="imageBlock">
+          <img src="images/A7/LideStyle.png" />
+          <p>I tried to figure out if there was a pro to a thicker lid with an H-shape on a track, rather than a thinner lid, but my woodworking husband reassured me the simpler, thinner version is best.</p>
+        </div>
+
+        <h3>Filter Storage</h3>
+        <div class="imageBlock">
+          <img src="images/A7/FilterStorage.png" />
+          <p>The filter storage should snap to the bottom of 2 tea boxes pressed together, with the same sliding lid mechanism.</p>
+        </div>
+      </div>
+
+      <div class="contentBlock">
+        <h2>Schedule</h2>
+        <table>
+          <tr>
+            <th>Task</th>
+            <th class="narrow" >Finish By</th>
+            <th>Notes</th>
+          </tr>
+          <tr>
+            <td>Model test slide-fit lids</td>
+            <td class="narrow" >May 17th</td>
+            <td></td>
+          </tr>
+          <tr>
+            <<td class="narrow">Print test slide-fit lids </td>
+            <td class="narrow" >May 18th</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Model test embedded magnets</td>
+            <td class="narrow">May 20th</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Print test embedded magnets</td>
+            <td class="narrow">May 20th and 21st</td>
+            <td>If not working, pivot to press-fit. If complete, skip press-fit steps.</td>
+          </tr>
+          <tr>
+            <td class="narrow">Model press-fit test (contingency)</td>
+            <td class="narrow">May 21st </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Print test press-fit (contingency)</td>
+            <td class="narrow">May 22nd</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Model tea box</td>
+            <td class="narrow">May 23rd</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Print 2 tea boxes</td>
+            <td class="narrow">May 24th</td>
+            <td>If not done by the 24th, continue working on these and don’t print storage box </td>
+          </tr>
+          <tr>
+            <td class="narrow">Model filter box</td>
+            <td class="narrow">May 25th</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Print filter storage box </td>
+            <td class="narrow">May 26th</td>
+            <td>Only do this if tea boxes are complete. You can always shove the filters in a tea box.</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="contentBlock">
+        <h2>Bill of Materials</h2>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Example Link</th>
+            <th>Quantity</th>
+            <th>Estimated Cost</th>
+            <th>When Needed</th>
+           <th>Notes</th>
+          </tr>
+          <tr>
+            <td>Test Filament</td>
+            <td><a href="https://www.amazon.com/Proto-pasta-HTP21705-ICE-Translucent-Iridescent-1-75mm/dp/B09SM62P99/ref=sr_1_21?crid=1V3E1P5ZGZ10T&dib=eyJ2IjoiMSJ9.4YeCvDVhARtU_v0HMlHftYwn6NWsH3T8wru2Mtr_zcJ7OGnz9TQDp_SGVFpBIuZ9RaakukDkD_te0cUhY2vOPz85nTE_9XRuS19AGlnve25XIWbkeQkBIA0XtshIUcMVRbz_z0I2su44ZDWqu6xOnNEqb69mQZ1gxr0j0Gi5aZk6MLcasMS2dDdcCdzf_UVxbzVw56C4zn8oWJ823Dwp73w_dd7YM6s8Y4FE9ZVB67c.-FKJlj_EmaEHiG5H7vL4FvdAEvGrp3VwI3Ea_FOpNq0&dib_tag=se&keywords=frosted%2Bfilament&qid=1714517269&sprefix=frosted%2Bfilament%2Caps%2C158&sr=8-21&th=1">Protopasta 3D Printer Filament</a></td>
+            <td>1 Roll</td>
+            <td>$29.99</td>
+            <td>n/a</td>
+            <td>Already have</td>
+            </td>
+          </tr>
+          <tr>
+            <td>Final Print Filament</td>
+            <td><a href="https://www.amazon.com/Polymaker-Matte-Filament-1-75mm-Carton/dp/B098L4WQTB/ref=sr_1_2_sspa?crid=3072VQ46MJAYM&dib=eyJ2IjoiMSJ9.QfYCSIn1FJyQdwDHQsegWxh8u8MApfnqv1T1CWAkgrKSuNhe_mukaKeVytMQrmZzyNLF4mkLed1CcZeamtUNRenxCmBVM6koyngqHka77XEU0izezigWOppNn81FINFBBn8b805_WvgwJ9gu3oK0J-xEoH7ow046wH5JgKZGpvTczzIor1wm3fVoz2Yk_ctaMarpafReJPjjKksOb61rjma2vR517WvHmeDnmlzarNI.vaKpfGkJda7HUknpGd70JSy5ReuxDnNg_cjAsGSufuQ&dib_tag=se&keywords=polymaker&qid=1715745935&sprefix=polymaker%2Caps%2C223&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">Polymaker Matte PLA Filament</a></td>
+            <td>1 Roll</td>
+            <td>$20.99</td>
+            <td>n/a</td>
+            <td>Already have</td>
+            </td>
+          </tr>
+          <tr>
+            <td>Magnets</td>
+            <td><a href="https://www.mcmaster.com/products/magnets/magnets-1~/neodymium-magnets-7/">Neodymium Magnets</a></td>
+            <td>30, just in case</td>
+            <td>$50</td>
+            <td>May 20</td>
+            <td>Ordering</td>
+            </td>
+          </tr>
+          
+        </table>
+      </div>
+
+
+
+
+      <!-- Intro Image -->
+      <div class="imageBlock">
+        <img src="" />
+        <p class="caption">...</p>
+      </div>
+
+      <!-- Section -->
+      <div class="contentBlock">
+      </div>
+
+      <div class="imageBlock">
+        <img src="" />
+        <p class="caption">...</p>
+      </div>
+
+      <div class="imageBlock twoUp">
+        <!-- Image -->
+        <div class="imageContainer">
+            <img src="" />
+            <p class="caption">...</p>
+        </div>
+        <!-- Image -->
+        <div class="imageContainer">
+          <img src="" />
+          <p class="caption">...</p>
+        </div>
+      </div>
+    
+    </div>
+  </body>
+</html>
