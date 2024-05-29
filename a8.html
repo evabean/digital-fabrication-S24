@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>A8: Final Project</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <h1>A8: Final Project</h1>
+    
+    <div class="assignmentMainContainer">
+
+      <!-- Intro Image -->
+      <div class="imageBlock">
+        <img src="images/A8/Snap.gif" />
+      </div>
+
+      <!-- Section -->
+      <div class="contentBlock">
+        <h2>Overview</h2>
+        <p>My plan for this project was to make a set of modular, magnetically connected boxes to carry small amounts of loose-leaf tea and filters bags to brew it. The plan was to use combination of parametric modeling, 3d printing, stock parts, and friction fit, with contingency plan to omit stock parts if necessary. In the end, I managed to fulfill almost all of my plans and didn’t sacrifice any “features”, only an extra box print, to make it work. </p>
+
+        <h3>How It Started</h3>
+        <div class="imageBlock">
+          <img src="images/A7/Overview-1.png" />
+          <p class="caption">My original plan</p>
+        </div>
+
+        <h3>How It Ended</h3>
+        <div class="imageBlock">
+          <img src="images/A8/Snap.gif" />
+          <p class="caption">Magnetic boxes!</p>
+        </div>
+      </div>
+
+      <div class="contentBlock">
+        <h2>Process</h2>
+        <p> Below is my original plan. I generally followed this model, except I didn’t end up modeling the tea filter storage box – it would have been the exact same process as modeling the tea box and I ran out of time. </p>
+        <table>
+          <tr>
+            <th>Task</th>
+            <th class="narrow"> Finish By</th>
+            <th>Notes</th>
+          </tr>
+          <tr>
+            <td>Model test slide-fit lids</td>
+            <td class="narrow" >May 17th</td>
+            <td></td>
+          </tr>
+          <tr>
+            <<td class="narrow">Print test slide-fit lids </td>
+            <td class="narrow" >May 18th</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Model test embedded magnets</td>
+            <td class="narrow">May 20th</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Print test embedded magnets</td>
+            <td class="narrow">May 20th and 21st</td>
+            <td>If not working, pivot to press-fit. If complete, skip press-fit steps.</td>
+          </tr>
+          <tr>
+            <td class="narrow">Model press-fit test (contingency)</td>
+            <td class="narrow">May 21st </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Print test press-fit (contingency)</td>
+            <td class="narrow">May 22nd</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Model tea box</td>
+            <td class="narrow">May 23rd</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Print 2 tea boxes</td>
+            <td class="narrow">May 24th</td>
+            <td>If not done by the 24th, continue working on these and don’t print storage box </td>
+          </tr>
+          <tr>
+            <td class="narrow">Model filter box</td>
+            <td class="narrow">May 25th</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="narrow">Print filter storage box </td>
+            <td class="narrow">May 26th</td>
+            <td>Only do this if tea boxes are complete. You can always shove the filters in a tea box.</td>
+          </tr>
+        </table>
+
+        <div class="contentBlock">
+          <h3>Test 1 & 2</h3>
+          <p>I started by modeling and testing the slide-fit lids. At this stage, a 1mm overall horizontal tolerance and a .25mm “height” tolerance seemed to create a snug fit, so I moved on.</p>
+          <div class="imageBlock twoUp">
+            <!-- Image -->
+            <div class="imageContainer">
+                <img src="images/A8/V1.jpeg" />
+                <p class="caption">.12mm horizontal tolerance and .2mm vertical tolerance was not enough</p>
+            </div>
+            <!-- Image -->
+            <div class="imageContainer">
+              <img src="images/A8/V2.jpeg" />
+              <p class="caption">1mm horizontal tolerance and .25mm vertical tolerance worked better!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contentBlock">
+          <h3>Test 3 & 4</h3>
+          <p>Next, I tested fitting the magnet in to a hole. The biggest challenge was to get my printer to stop and then start again –  pressing pause on the printer didn’t work, nor did using the “pause at layer” post-processing function because it wouldn’t restart. </p>
+          <div class="imageBlock">
+            <img src="images/A8/Screenshot-1.png"/>
+            <p class="caption">Pause at height did not work.</p>
+          </div>
+          <div class="imageBlock twoUp">
+            <!-- Image -->
+            <div class="imageContainer">
+                <img src="images/A8/V3.jpeg" />
+                <p class="caption">At least I was able to test magnet fit</p>
+            </div>
+            <!-- Image -->
+            <div class="imageContainer">
+              <img src="images/A8/V4.jpeg" />
+              <p class="caption">Womp womp</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contentBlock">
+          <h3>Test 5 & 6</h3>
+          <p>Thanks to a Cura forum post, I found out that using the “filament change” post processing g-code worked great for mid-print insertion! I was also testing magnetic strength – with a 1mm wall, the connection was pretty weak, but a .5mm wall was much better.  </p>
+          <div class="imageBlock">
+            <img src="images/A8/Screenshot-2.png"/>
+            <p class="caption">Filament change g-code worked!</p>
+          </div>
+          <div class="imageBlock twoUp">
+            <!-- Image -->
+            <div class="imageContainer">
+                <img src="images/A8/V5.jpeg" />
+                <p class="caption">Finally got some magnets trapped in plastic</p>
+            </div>
+            <!-- Image -->
+            <div class="imageContainer">
+              <img src="images/A8/V6.jpeg" />
+              <p class="caption">Thinner walls for a stronger connection</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contentBlock">
+          <h3>Test 7</h3>
+          <p>Thinking that the slide fit was pretty tight, I went back and double-checked. I found that a .5mm “vertical” tolerance was better than the original .25mm, and accommodated printing error better. </p>
+          <div class="imageBlock">
+            <img src="images/A8/V7.jpeg" />
+          </div>
+        </div>
+
+        <div class="contentBlock">
+          <h3>Interlude: BooleanUnion Probs </h3>
+          <p>At this point I figured out that I couldn't use booleanUnion to create hollow spaces in a Rhino model, because Cura would just fill them in. Time to pivot!</p>
+          <div class="imageBlock">
+            <img src="images/A8/Interlude.jpeg" />
+            <p class="caption">I just had no idea what to google search to fix this so I pivoted.</p>
+          </div>
+        </div>
+
+        <div class="contentBlock">
+          <h3>Tests 8, 9, 10</h3>
+          <p>To figure out the press-fit, I tested a bunch of tolerances and .2mm seemed to work well for a snap-fit. </p>
+          <div class="imageBlock">
+            <img src="images/A8/V8.jpeg" />
+            <p class="caption">Always test before you print!!</p>
+          </div>
+        </div>
+
+        <div class="contentBlock">
+          <h3>Test 11</h3>
+          <p> This was the point where I made the parametric model of the box. You can adjust the box length, widht, height, wall thickness, lid slot thickness, and lid tolerance. I didn't end up using the snap-fit pieces but could still bake the basic box and lid.</p>
+
+          <div class="imageBlock">
+            <img src="images/A8/Grasshopper-A.png" />
+          </div>
+
+          <div class="imageBlock">
+            <img src="images/A8/Grasshopper-B.png" />
+            <p class="caption">Parameters!!</p>
+          </div>
+
+          <div class="imageBlock">
+            <img src="images/A8/Grasshopper-C.png" />
+            <p class="caption">Testing outputs – baking gives a box and its corresponding lid with the correct dimensions to fit snugly.</p>
+          </div>
+
+
+
+
+          <p>The first print did not go well! It was quite hard to remove the supports, and the horizontal expansion crushed the side bars and nothing fit. The side bars were a deviation from plan, and I don’t believe that’s what caused it to fail – MAYBE vertical bars would have worked, but I wasn’t about to find out. </p>
+          <div class="imageBlock twoUp">
+            <!-- Image -->
+            <div class="imageContainer">
+                <img src="images/A8/V11-A.jpeg" />
+                <p class="caption">This did not work.</p>
+            </div>
+            <!-- Image -->
+            <div class="imageContainer">
+              <img src="images/A8/V11-B.jpeg" />
+              <p class="caption">I should have test printed with the lines running horizontally in V8/9/10.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contentBlock">
+          <h3>Test 12</h3>
+          <p>Ok, I did try to find out. But this did not go well either. My printer was skipping layers and prints were snapping in half. </p>
+          <div class="imageBlock">
+            <img src="images/A8/V12.jpeg" />
+            <p class="caption">Oops.</p>
+          </div>
+        </div>
+
+        <div class="contentBlock">
+          <h3>Test 13</h3>
+          <p>I decided to embed the magnets still, and have them exposed and glued in. This was NOT part of my original plan, but an acceptable deviation that would allow me to fulfill what I wanted to do. Since I already had the slide fit and magnet hole size worked out, this worked on the first try! </p>
+          <div class="imageBlock">
+            <img src="images/A8/V13.jpeg" />
+            <p class="caption">Fantastico!</p>
+          </div>
+        </div>
+
+        <div class="contentBlock">
+          <h3>Test 14</h3>
+          <p>But at this point, I realized round magnets would pose a problem if I wanted to embed them. See illustration below. So ordered some rectangular magnets.</p>
+          <div class="imageBlock">
+            <img src="images/A8/V14.jpeg" />
+            <p class="caption">Here, I realized I had made a HUGE mistake.</p>
+          </div>
+        </div>
+
+        <div class="contentBlock">
+          <h3>Test 15</h3>
+          <p>While I waited for my magnets, I printed a few more of the exposed-magnet models. These worked super well, and I was able to snap everything together! I did have some warping on the lids, because they were printed at the same time as the boxes and thus on the printer for a long time. Going forward, I printed lids separately so they didn’t have to hang out and wait for their box counterparts.</p>
+          <p>I did print a few more versions of this, but had ongoing issues with adhesion, stringing, and knocked down supports. The only fix was turning up the heat in my room to 80deg to keep ambient temperatures high. </p>
+
+          <div class="imageBlock">
+            <img src="images/A8/V15-A.jpeg" />
+            <p class="caption">The raft always lifted off in one specific corner. Also, supports kept getting knocked down.</p>
+          </div>
+
+          <div class="imageBlock twoUp">
+            <!-- Image -->
+            <div class="imageContainer">
+                <img src="images/A8/V15-B.jpeg" />
+                <p class="caption">This looks bad but it ended up being OK.</p>
+            </div>
+            <!-- Image -->
+            <div class="imageContainer">
+              <img src="images/A8/V15-C.jpeg" />
+              <p class="caption">Yay! The special quilted addition is because I left it in the oven too long to fix the warping.</p>
+            </div>
+          </div>
+
+          <div class="imageBlock">
+            <img src="images/A8/Snap.gif"/>
+            <p class="caption">Snappy snap.</p>
+          </div>
+
+        </div>
+
+        <div class="contentBlock">
+          <h2>Embedded Magnets (Test 16)</h2>
+          <p>I panicked through this entire process. The "change filament" gcode only pauses the printer for 30 seconds, so I have 30 seconds to insert the magnets in the correct order which is not very long at all. To prep, I laid all my magnets out on the bed aligned with the print to make sure they were in ther right order and would attach to each other. My backup plan was to slow printing speed down to 10% if I didn't make it in time, and sneak them in before the next layer.</p>
+          
+          <div class="imageBlock">
+            <img src="images/A8/V16-A.jpeg"/>
+            <p class="caption">Hopefully this works.</p>
+          </div>
+
+          <p>On my first attempt, I realized that placing the boxes so close together meant the motor head was in the way while I was trying to add magnets mid-print. I ended up bumping the print and messing everything up. I also realized I needed to glue the magnets, because they would otherwise stick to the print head (I didn't have this problem with the round ones). I did get to check the magnet orientation and it was working well, so this was not a total failure.</p>
+
+          <div class="imageBlock">
+            <img src="images/A8/V16-B.jpeg"/>
+            <p class="caption">This did not work. You can see the offset on the far edge where I bumped it about 2.5mm and it kept printing.</p>
+          </div>
+
+          <div class="imageBlock">
+            <img src="images/A8/V16-C.jpeg"/>
+            <p class="caption">Second attempt</p>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+      <div class="contentBlock">
+        <h2>Outcomes</h2>
+        <p>Here are some of the successful prints! Due to the nature of magnets, they don’t connect in every configuration – you can shuffle them around to figure out what works. </p>
+
+        <div class="imageBlock">
+          <img src="images/A8/Outcome-A.jpeg" />
+          <p class="caption">Magnets are doubled up inside for extra strength. Also I kept gluing them in the wrong way, so it's a surprise when things attract or repel!</p>
+        </div>
+
+        <div class="imageBlock">
+          <img src="images/A8/Outcome-B.jpeg" />
+        </div>
+
+      </div>
+
+      <div class="contentBlock">
+        <h2>How it went</h2>
+        <h3>Did I stick to the plan?</h3>
+        <p>Kind of. I didn’t end up making a flatter box for filters, but I made a grasshopper file that would allow me to do so easily. I ended up changing the shape of my magnets </p>
+
+        <h4>Used Rhino ✓</h4>
+        <p>I used Rhino to model the parts, and learned how to use nonmanifoldmerge and createregion commands to make hollow areas for the stock parts to nest in. </p>
+        
+        <h4>Used Grasshopper ✓</h4>
+        <p>I used grasshopper to parametrically model the box and lid, which was extremely helpful when I had to downsize the box to print faster and resize the walls to accommodate different magnets.</p>
+
+        <h4>3rd Printed ✓</h4>
+        <p>Yes, I did this. Not much to say about it!</p>
+
+        <h4>Friction Fit ✓</h4>
+        <p>Yes, according to my original plan, then modified a bit to make them stronger.</p>
+
+        <h4>Stock Parts ✓</h4>
+        <p>Yes, incorporated magnets! Two different kinds! </p>
+
+      </div>
+
+      <div class="contentBlock">
+        <h2>Reflection</h2>
+        <p>I could have spent more time focusing on creating a beautiful finish or high quality print, but I realized throughout this process that what I love most is the process of tinkering, recording, and tinkering until I get the right result. While it would be nice for these to be smooth and beautiful, I truly don’t care! I had way more fun creating an incredible spaghetti pile in grasshopper and fine-tuning my magnet system than I would have had sanding plastic. </p>
+        <h3>Interesting things I learned</h3>
+        <ul>
+          <li>To create hollow areas in Rhino, put the items in place, run nonmanifoldmerge, then run createregions on the resulting object and delete the remaining input. </li>
+          <li>You can create support blockers in Cura! I had to block support to get truly hollow regions for magnets, and once I figured that out it was all smooth sailing. </li>
+          <div class="imageBlock">
+            <img src="images/A8/Screenshot-3.png" />
+            <p class="caption">On the left sidebar, at the bottom, you can turn on a support blocker. You have to apply it, then turn off support, then turn it back on, then reslice to get it to work.</p>
+          </div>
+          <li>I spent a lot of time adjusting the bed leveling knobs mid-print, and I found that worked really well for me. I don’t know why, but micro-adjustments every print really felt like the key to success. </li>
+          <li>These mangets are not that strong, but they are stronger when you double them up!</li>
+  
+        </ul>
+
+      </div>
+
+      <div class="contentBlock">
+        <h2>Resources & Files</h2>
+        <ul>
+          <li><a href="files/A8/Embedded Magnets.zip">Files for producing embedded magnet model</a></li>
+          <li><a href="files/A8/Exposed Magnets.zip">Files for producing exposed magnet model</a></li>
+          <li><a href="files/A8/BoxGenerator.gh">Grasshopper recipe for making boxes and lids!</a></li>
+        </ul>  
+      </div>
+    
+    </div>
+  </body>
+</html>
